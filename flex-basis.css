@@ -10,12 +10,12 @@ body{
     color: #333;
 }
 .item{
-    flex: 1;
     margin: 5px;
     background-color: tomato;
     text-align: center;
     font-size: 1.5em;
     padding: 0 11;
+    position: relative;
 }
 
 .container{
@@ -25,12 +25,27 @@ body{
     border: 1px solid #ccc;
 }
 
-.shrink-1{
-    flex-shrink: 1;
+.basis-auto{
     flex-grow: 1;
+    flex-basis: auto;
+
 }
 
-.shrink-3{
-     flex-grow: 1;
-     flex-shrink: 1;
+.basis-auto-grow-2{
+    flex-grow: 2;
+    flex-basis: auto;
+}
+
+.basis-auto-width{
+    flex-grow: 1;
+    flex-basis: auto;
+    width: 60px;
+}
+
+.basis-auto-grow-0{
+    flex-basis: auto;
+}
+
+.overlay{
+    margin-top: 10px;
 }
